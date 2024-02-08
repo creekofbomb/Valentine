@@ -20,6 +20,9 @@ window.onload = function () {
     "Wouldn't you reconsider?",
     "Is that your final answer?",
     "You're breaking my heart ;(",
+    "You're making me sad!",
+    "Please don't do this!",
+    "Click Yes!"
   ];
 
   nobtn.addEventListener("click", function () {
@@ -27,13 +30,17 @@ window.onload = function () {
     var noStyle = window.getComputedStyle(nobtn);
     var yesWidth = parseInt(yesStyle.width);
     var yesHeight = parseInt(yesStyle.height);
+    var fontsize = parseInt(yesStyle.fontSize);
     yesbtn.style.width = yesWidth + 50 + "px";
     yesbtn.style.height = yesHeight + 50 + "px";
+    yesbtn.style.fontSize = fontsize + 10 + "px";
     var noWidth = parseInt(noStyle.width);
     var noHeight = parseInt(noStyle.height);
+    var fontsizeno = parseInt(noStyle.fontSize);
     if (noWidth > 5 && noHeight > 5) {
       nobtn.style.width = noWidth - 5 + "px";
       nobtn.style.height = noHeight - 5 + "px";
+      nobtn.style.fontSize = fontsizeno - 2 + "px";
     }
     var randomIndex = Math.floor(Math.random() * noResponses.length);
     alert(noResponses[randomIndex]);
@@ -43,5 +50,6 @@ window.onload = function () {
     img.src =
       "https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif";
     alert("I love you Kaitlyn <3");
+    nobtn.disabled = true;
   });
 };

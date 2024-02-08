@@ -1,62 +1,71 @@
-body{
-    display: flex;
-    justify-content: center;
-    background-image: url('background.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
-#center{
-    background-color: pink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 50px;
-    border: 1px solid black;
-    border-radius: 10px;
+#center {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-#center img{
-    border-radius: 20px;
+#center img {
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
 }
 
-#btn{
-    width: 400px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 50px;
+#btn {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 50px;
 }
 
-#btn button{
-    width: 100px;
-    height: 100px;
-    border-radius: 30px;
-    background-color: lightsalmon;
+#btn button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: rgb(255, 160, 122);
+  transition: background-color 0.5s ease; /* Add this line */
 }
 
-#btn button:hover{
-    background-color: lightcoral;
+#btn button:hover {
+  background-color: lightcoral;
 }
 
-#btn button:active{
-    background-color: lightpink;
+#btn button:active {
+  background-color: lightpink;
 }
 
-#btn button:focus{
-    background-color: lightpink;
+#btn button:focus {
+  background-color: lightpink;
 }
 
+#btn img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
 
-#btn img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+h1 {
+  color: #ff69b4; /* Hot pink color for a romantic feel */
+  font-family: "Brush Script MT", cursive; /* Cursive font for a soft touch */
+  text-align: center; /* Center alignment for balance */
+  text-shadow: 2px 2px #ffb6c1; /* Light pink shadow for depth */
 }
